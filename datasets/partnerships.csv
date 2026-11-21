@@ -1,0 +1,8 @@
+company_id,partner_id,partnership_date,partnership_type,evidence_note,source_url
+C001,C004,2026-04-27,Strategic partnership,OpenAI and Microsoft amended their long-term partnership covering cloud infrastructure and AI development,https://openai.com/index/next-phase-of-microsoft-partnership/
+C001,C007,2026-02-27,Strategic cloud partnership,OpenAI and Amazon announced collaboration on enterprise AI agents infrastructure and customized models,https://openai.com/index/amazon-partnership/
+C001,C003,2026-10-21,Cloud distribution partnership,OpenAI models and Codex workflows are being integrated into Google Cloud Model Garden,https://openai.com/index/openai-models-google-cloud/
+C002,C007,2026-04-20,Compute partnership,Anthropic and Amazon expanded their collaboration for AI training and deployment compute capacity,https://www.anthropic.com/news/anthropic-amazon-compute
+C002,C004,2025-11-18,Strategic compute partnership,Anthropic announced Azure compute collaboration with Microsoft,https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
+C002,C005,2025-11-18,Technology partnership,Anthropic and NVIDIA announced collaboration on model and hardware optimization,https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
+C004,C009,2026-07-21,Strategic AI partnership,Microsoft and Mistral expanded their partnership across AI infrastructure and enterprise model deployment,https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/

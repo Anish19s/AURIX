@@ -1,0 +1,12 @@
+product_id,name,type,source_url
+P001,ChatGPT,AI application,https://chatgpt.com/
+P002,OpenAI API,Developer platform,https://developers.openai.com/api/docs
+P003,Claude,AI application,https://claude.ai/
+P004,Claude API,Developer platform,https://platform.claude.com/docs/en/intro
+P005,Gemini,AI application,https://gemini.google.com/
+P006,Google AI Studio,Developer platform,https://aistudio.google.com/
+P007,Llama 4,Foundation model family,https://dev.meta.ai/llama
+P008,Amazon Bedrock,Cloud AI service,https://aws.amazon.com/bedrock/
+P009,Perplexity,AI answer engine,https://www.perplexity.ai/hub
+P010,Hugging Face Hub,AI model platform,https://huggingface.co/docs/hub/main/index
+P011,NVIDIA AI Software,AI software platform,https://www.nvidia.com/en-us/software/

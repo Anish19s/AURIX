@@ -1,0 +1,12 @@
+company_id,product_id,source_url
+C001,P001,https://chatgpt.com/
+C001,P002,https://developers.openai.com/api/docs
+C002,P003,https://claude.ai/
+C002,P004,https://platform.claude.com/docs/en/intro
+C003,P005,https://gemini.google.com/
+C003,P006,https://aistudio.google.com/
+C006,P007,https://dev.meta.ai/llama
+C007,P008,https://aws.amazon.com/bedrock/
+C012,P009,https://www.perplexity.ai/hub
+C013,P010,https://huggingface.co/docs/hub/main/index
+C005,P011,https://www.nvidia.com/en-us/software/

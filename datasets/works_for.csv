@@ -1,0 +1,16 @@
+person_id,company_id,role
+PE001,C001,CEO
+PE002,C001,President
+PE003,C002,CEO
+PE004,C002,President
+PE005,C003,CEO
+PE006,C004,Chairman and CEO
+PE007,C006,Founder and CEO
+PE008,C007,President and CEO
+PE009,C008,Founder and CEO
+PE010,C009,Co-founder and CEO
+PE011,C010,Founder and CEO
+PE012,C011,Co-founder and CEO
+PE013,C012,Co-founder and CEO
+PE014,C013,Co-founder and CEO
+PE015,C003,Chief Scientist

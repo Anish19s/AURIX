@@ -1,0 +1,21 @@
+company_id,competitor_id,relationship_type,evidence_note,source_url
+C001,C002,COMPETES_WITH,OpenAI and Anthropic offer competing foundation models and AI assistants,https://openai.com/
+C001,C003,COMPETES_WITH,OpenAI and Google offer competing foundation models and AI assistants,https://openai.com/
+C001,C004,COMPETES_WITH,OpenAI and Microsoft overlap in enterprise AI products and platforms,https://openai.com/
+C001,C005,COMPETES_WITH,OpenAI and NVIDIA overlap in parts of the AI computing ecosystem,https://openai.com/
+C001,C006,COMPETES_WITH,OpenAI and Meta develop competing foundation models,https://openai.com/
+C001,C008,COMPETES_WITH,OpenAI and xAI develop competing AI models and assistants,https://openai.com/
+C002,C003,COMPETES_WITH,Anthropic and Google develop competing foundation models,https://www.anthropic.com/
+C002,C004,COMPETES_WITH,Anthropic and Microsoft overlap in enterprise AI offerings,https://www.anthropic.com/
+C002,C006,COMPETES_WITH,Anthropic and Meta develop competing foundation models,https://www.anthropic.com/
+C002,C009,COMPETES_WITH,Anthropic and Mistral develop competing foundation models,https://www.anthropic.com/
+C003,C004,COMPETES_WITH,Google and Microsoft compete in cloud AI and AI assistants,https://ai.google/
+C003,C006,COMPETES_WITH,Google and Meta develop competing foundation models,https://ai.google/
+C003,C012,COMPETES_WITH,Google and Perplexity overlap in AI-powered search and answers,https://ai.google/
+C004,C007,COMPETES_WITH,Microsoft and Amazon compete in cloud infrastructure and AI services,https://azure.microsoft.com/
+C005,C038,COMPETES_WITH,NVIDIA and AMD compete in AI accelerators,https://www.nvidia.com/
+C006,C008,COMPETES_WITH,Meta and xAI develop competing foundation models,https://ai.meta.com/
+C007,C004,COMPETES_WITH,AWS and Microsoft Azure compete in cloud AI infrastructure,https://aws.amazon.com/
+C009,C010,COMPETES_WITH,Mistral and DeepSeek develop competing foundation models,https://mistral.ai/
+C011,C002,COMPETES_WITH,Cohere and Anthropic overlap in enterprise-oriented AI models,https://cohere.com/
+C012,C001,COMPETES_WITH,Perplexity and OpenAI overlap in AI-powered answer experiences,https://www.perplexity.ai/

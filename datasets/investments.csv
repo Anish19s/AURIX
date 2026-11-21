@@ -1,0 +1,10 @@
+investment_id,investor_type,investor_person_id,investor_company_id,recipient_company_id,investment_date,amount_usd,investment_type,source_url
+INV001,company,,C007,C002,2023-09-25,1250000000,Strategic investment,https://www.aboutamazon.com/news/company-news/amazon-anthropic-ai-investment
+INV002,company,,C007,C002,2024-03-27,2750000000,Strategic investment,https://www.aboutamazon.com/news/company-news/amazon-anthropic-ai-investment
+INV003,company,,C007,C002,2024-11-22,4000000000,Strategic investment,https://www.aboutamazon.com/news/aws/amazon-invests-additional-4-billion-anthropic-ai
+INV004,company,,C003,C002,2023-05-23,450000000,Strategic investment,https://www.ftc.gov/system/files/ftc_gov/pdf/p246201_aipartnerships6breport_redacted.pdf
+INV005,company,,C003,C002,2023-10-27,2000000000,Strategic investment,https://www.ftc.gov/system/files/ftc_gov/pdf/p246201_aipartnerships6breport_redacted.pdf
+INV006,company,,C004,C001,2019-07-22,10000000000,Strategic investment commitment,https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/msft-20240930.htm
+INV007,company,,C004,C002,2025-11-18,,Strategic investment commitment,https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
+INV008,company,,C005,C002,2025-11-18,,Strategic investment commitment,https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
+INV009,person,PE009,,C001,,,Founder contribution,https://openai.com/our-structure/
