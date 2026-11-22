@@ -7,6 +7,9 @@
 - product
 - location
 - investment
+- source
+- evidence
+- claim
 
 ## 2. Relationships
 
