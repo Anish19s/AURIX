@@ -1,2 +1,37 @@
+
+# Existing project exclusions
 Neo4j-5e7d8b14-Created-2026-11-21.txt
 aiproject.md
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build and test artifacts
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Local document ingestion data
+datasets/raw/*
+!datasets/raw/.gitkeep
+datasets/processed/*
+!datasets/processed/.gitkeep
+
+# Editor and OS files
+.vscode/
+.DS_Store
