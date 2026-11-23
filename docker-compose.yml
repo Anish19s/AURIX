@@ -1,0 +1,18 @@
+
+services:
+  aurix:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: aurix-app
+
+    working_dir: /app
+
+    volumes:
+      - .:/app
+
+    env_file:
+      - .env
+
+    command: ["sleep", "infinity"]
