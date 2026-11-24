@@ -1,6 +1,6 @@
 from ingestion.parsers.pdf_parser import parse_pdf
 from ingestion.cleaners.text_cleaner import clean_text
-
+from ingestion.collectors.pdf_collector import download_pdf
 
 def ingest_pdf(file_path: str) -> dict:
     """
@@ -31,3 +31,19 @@ def ingest_pdf(file_path: str) -> dict:
     }
 
     return result
+
+
+
+def ingest_pdf_from_url(url: str) -> dict:
+    """
+    Download a PDF from a URL and run the complete ingestion pipeline.
+    """
+
+    # 1. Collect the PDF
+    file_path = download_pdf(url)
+
+    # 2. Parse and clean the downloaded PDF
+    document = ingest_pdf(file_path)
+
+    # 3. Return structured document
+    return document
