@@ -1,21 +1,10 @@
 
 from pathlib import Path
 from urllib.parse import urlparse, unquote
-import hashlib
 import re
 import requests
+from ingestion.utils import calculate_file_hash
 
-
-def calculate_file_hash(file_path: Path) -> str:
-    """Calculate the SHA-256 hash of a file."""
-
-    sha256 = hashlib.sha256()
-
-    with file_path.open("rb") as file:
-        for chunk in iter(lambda: file.read(8192), b""):
-            sha256.update(chunk)
-
-    return sha256.hexdigest()
 
 
 def download_pdf(url: str) -> str:
@@ -93,8 +82,7 @@ def download_pdf(url: str) -> str:
             raise ValueError("The downloaded PDF is empty")
 
         # 7. Calculate hash of downloaded PDF
-        new_hash = calculate_file_hash(temp_path)
-
+        new_hash = calculate_file_hash(str(temp_path))
         # 8. Compare against existing PDFs
         for existing_file in raw_dir.glob("*.pdf"):
             existing_hash = calculate_file_hash(existing_file)
