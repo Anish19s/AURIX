@@ -1,6 +1,10 @@
 from ingestion.parsers.pdf_parser import parse_pdf
 from ingestion.cleaners.text_cleaner import clean_text
 from ingestion.collectors.pdf_collector import download_pdf
+from ingestion.document_registry import register_document,update_registry
+from pathlib import Path
+from ingestion.utils import calculate_file_hash
+
 
 def ingest_pdf(file_path: str) -> dict:
     """
@@ -39,11 +43,32 @@ def ingest_pdf_from_url(url: str) -> dict:
     Download a PDF from a URL and run the complete ingestion pipeline.
     """
 
-    # 1. Collect the PDF
+    # 1. Collect & download the PDF
     file_path = download_pdf(url)
 
-    # 2. Parse and clean the downloaded PDF
-    document = ingest_pdf(file_path)
+    file_hash=calculate_file_hash(file_path)
 
-    # 3. Return structured document
-    return document
+    # 2. Register doc as downloaded
+    registry_record={
+        "document_id":file_hash,
+        "file_name":Path(file_path).name,
+        "source_url":url,
+        "file_hash":file_hash,
+        "processing_status":"downloaded"
+    }
+
+    register_document(registry_record)
+    update_registry(file_hash,"processing")
+
+    try:
+        # 3. Parse and clean the downloaded PDF
+        document = ingest_pdf(file_path)
+        # 4.update 
+        update_registry(file_hash,"processed")
+        # 5.return doc
+        return document
+    except Exception:
+        update_registry(file_hash,"failed")
+        raise
+
+ 

@@ -32,7 +32,7 @@ def save_registry(documents: list) -> None:
 
 
 
-def register_document(document: dict) -> None:
+def register_document(document: dict) -> dict:
     """
     Add a new document record to the registry.
     """
@@ -42,10 +42,28 @@ def register_document(document: dict) -> None:
     # Check whether document is already registered
     for existing_document in documents:
         if existing_document["document_id"] == document["document_id"]:
-            raise ValueError("Document is already registered")
+            return existing_document
+
 
     # Add new document
     documents.append(document)
 
     # Persist updated registry
     save_registry(documents)
+
+    return document
+
+def update_registry(document_id,status):
+    documents=load_registry()
+
+    a=0
+    for ok in documents:
+        if ok["document_id"]==document_id:
+            ok["processing_status"]=status
+            a=1
+
+    if a==0:
+        return False 
+    
+    save_registry(documents)
+    return True
